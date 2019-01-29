@@ -1,0 +1,30 @@
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csprojResolveAssemblyReference.cache
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.Form1.resources
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.Properties.Resources.resources
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csproj.GenerateResource.Cache
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\bin\Debug\ArifOdev.exe.config
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\bin\Debug\ArifOdev.exe
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\bin\Debug\ArifOdev.pdb
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.exe
+C:\Users\PC\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.pdb
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\bin\Debug\ArifOdev.exe.config
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\bin\Debug\ArifOdev.exe
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\bin\Debug\ArifOdev.pdb
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.Form1.resources
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.Properties.Resources.resources
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csproj.GenerateResource.Cache
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csproj.CoreCompileInputs.cache
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.exe
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.pdb
+C:\Users\arifseyda\source\repos\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csprojResolveAssemblyReference.cache
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\bin\Debug\ArifOdev.exe.config
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\bin\Debug\ArifOdev.exe
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\bin\Debug\ArifOdev.pdb
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csprojAssemblyReference.cache
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\obj\Debug\ArifOdev.Form1.resources
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\obj\Debug\ArifOdev.Properties.Resources.resources
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csproj.GenerateResource.cache
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\obj\Debug\ArifOdev.csproj.CoreCompileInputs.cache
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\obj\Debug\ArifOdev.exe
+D:\DersNotlarım\1.2. dersler\CSharp\ArifOdev\ArifOdev\obj\Debug\ArifOdev.pdb
