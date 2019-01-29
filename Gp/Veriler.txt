@@ -1,0 +1,31 @@
+[
+{
+"AdSoyad" : "Ahmet Yılmaz",
+"OgrenciNo" : 101,
+"Not" : "80"
+},
+ 
+{
+"AdSoyad" : "Sümeyye Kurt",
+"OgrenciNo" : 201,
+"Not" : "70"
+},
+ 
+{
+"AdSoyad" : "Mehmet Ali Yanyatan",
+"OgrenciNo" : 191,
+"Not" : "75"
+},
+ 
+{
+"AdSoyad" : "Kazım Üzmez",
+"OgrenciNo" : 111,
+"Not" : "77"
+},
+ 
+{
+"AdSoyad" : "Caner Canbaz",
+"OgrenciNo" : 338,
+"Not" : "98"
+}
+] 
