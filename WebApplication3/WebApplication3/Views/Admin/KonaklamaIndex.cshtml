@@ -1,0 +1,76 @@
+﻿@model IEnumerable<WebApplication3.Models.Konaklama>
+
+@{
+    ViewBag.Title = "KonaklamaIndex";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>KonaklamaIndex</h2>
+
+<p>
+    @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Oluştur, "KonaklamaCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @WebApplication3.Resources.KonakModel.Ad
+        </th>
+        <th>
+            @WebApplication3.Resources.KonakModel.Sehirler
+        </th>
+        <th>
+            @WebApplication3.Resources.KonakModel.Fiyat
+        </th>
+        <th>
+            @WebApplication3.Resources.KonakModel.YurtEv
+        </th>
+        <th>
+            @WebApplication3.Resources.KonakModel.YakınUzak
+        </th>
+        <th>
+            @WebApplication3.Resources.KonakModel.KızErkek
+        </th>
+        <th>
+            @WebApplication3.Resources.KonakModel.KisiSayısı
+        </th>
+        <th>
+            @WebApplication3.Resources.KonakModel.KaçOdalı
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sehirler)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fiyat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YurtmuEvmi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YakinlikUzaklik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KızmıErkek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KisiSayısı)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kaçoda)
+        </td>
+        <td>
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Düzenle, "KonaklamaEdit", new { id=item.KonaklamaID }) |
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Detaylar, "KonaklamaDetails", new { id=item.KonaklamaID }) |
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Sil, "KonaklamaDelete", new { id=item.KonaklamaID })
+        </td>
+    </tr>
+}
+
+</table>

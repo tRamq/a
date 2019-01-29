@@ -1,0 +1,43 @@
+﻿@model WebApplication3.Models.IsImkanlari
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>IsImkanlari</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Sehir)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sehir)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SirketIsmi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SirketIsmi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bolum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bolum)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IsImkanlariID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

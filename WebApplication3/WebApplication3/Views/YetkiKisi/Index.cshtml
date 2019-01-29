@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WebApplication3.Models.YetkiKisi>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.YetkiAd)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.YetkiAd)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.YetkiKisiID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.YetkiKisiID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.YetkiKisiID })
+        </td>
+    </tr>
+}
+
+</table>

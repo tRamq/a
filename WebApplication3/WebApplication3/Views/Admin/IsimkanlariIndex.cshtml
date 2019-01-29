@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebApplication3.Models.IsImkanlari>
+
+@{
+    ViewBag.Title = "IsimkanlariIndex";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>IsimkanlariIndex</h2>
+
+<p>
+   <br /><br />
+</p>
+<table class="table">
+    <tr>
+        @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Oluştur, "IsimkanlariCreate")
+        <th>
+            @WebApplication3.Resources.JobModel.Sehir
+        </th>
+        <th>
+            @WebApplication3.Resources.JobModel.Sirketİsmi
+        </th>
+        <th>
+            @WebApplication3.Resources.JobModel.Bolum
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sehir)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SirketIsmi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bolum)
+        </td>
+        <td>
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Düzenle, "IsimkanlariEdit", new { id=item.IsImkanlariID }) |
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Detaylar, "IsimkanlariDetails", new { id=item.IsImkanlariID }) |
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Sil, "IsimkanlariDelete", new { id=item.IsImkanlariID })
+        </td>
+    </tr>
+}
+
+</table>

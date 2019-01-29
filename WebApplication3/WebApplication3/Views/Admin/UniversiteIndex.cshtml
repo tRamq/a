@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebApplication3.Models.Universite>
+
+@{
+    ViewBag.Title = "UniversiteIndex";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>UniversiteIndex</h2>
+
+<p>
+    @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Oluştur, "UniversiteCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @WebApplication3.Resources.UniModel.Ad
+        </th>
+        <th>
+            @WebApplication3.Resources.UniModel.Sehirler
+        </th>
+        <th>
+            @WebApplication3.Resources.UniModel.Bolum
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sehirler)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bolum)
+        </td>
+        <td>
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Düzenle, "UniversiteEdit", new { id = item.UniversiteID }) |
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Detaylar, "UniversiteDetails", new { id = item.UniversiteID }) |
+            @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Sil, "UniversiteDelete", new { id = item.UniversiteID })
+        </td>
+    </tr>
+}
+
+</table>

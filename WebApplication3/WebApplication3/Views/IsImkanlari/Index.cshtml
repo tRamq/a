@@ -1,0 +1,70 @@
+﻿@model IEnumerable<WebApplication3.Models.IsImkanlari>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+
+    <br />
+    <br />
+</p>
+@using (Html.BeginForm())
+{
+    <p>
+        Sirket İsmine göre arama : @Html.TextBox("Arama")
+        <input type="submit" value="Ara" />
+
+    </p>
+}
+
+
+<table class="table">
+    <tr>
+        @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Oluştur, "Create")
+        <th>
+            @WebApplication3.Resources.JobModel.Sehir
+        </th>
+        <th>
+            @WebApplication3.Resources.JobModel.Sirketİsmi
+        </th>
+        <th>
+            @WebApplication3.Resources.JobModel.Bolum
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sehir)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SirketIsmi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bolum)
+            </td>
+            @*<td>
+                    @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Düzenle, "Edit", new { id = item.IsImkanlariID }) |
+                    @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Detaylar, "Details", new { id = item.IsImkanlariID }) |
+                    @Html.ActionLink(@WebApplication3.Resources.Veritabaniİslemleri.Sil, "Delete", new { id = item.IsImkanlariID })
+                </td>*@
+        </tr>
+
+    }
+
+</table>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

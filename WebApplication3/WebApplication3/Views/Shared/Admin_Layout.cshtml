@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "Admin_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ASP.NET Uygulamam</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amerika Ulkesi</title>
+    <script src="/Scripts/js/main.js"></script>
+    <!-- Bootstrap -->
+    <link href="/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Content/css/stillerim.css">
+    <link href="/Content/css/animate.min.css" rel="stylesheet">
+    <link href="/Content/css/prettyPhoto.css" rel="stylesheet">
+
+    <link href="/Content/css/responsive.css" rel="stylesheet">
+
+    <!-- =======================================================
+      Theme Name: Gp
+      Theme URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-templat/
+      Author: BootstrapMade
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Erasmus Haberleri</a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        @*<li>
+
+            @Html.ActionLink("Türkce", "IsimkanlariIndex", "Admin", new { LanguageAbbrevation = "tr" }, null)|
+
+            @Html.ActionLink("English", "IsimkanlariIndex", "Admin", new { LanguageAbbrevation = "en" }, null)
+        </li>*@
+                        <li>@Html.ActionLink(@WebApplication3.Resources.Menuler.Universite, "UniversiteIndex", "Admin")</li>
+                        <li>@Html.ActionLink(@WebApplication3.Resources.Menuler.Konaklama, "KonaklamaIndex", "Admin")</li>
+                        <li>@Html.ActionLink(@WebApplication3.Resources.Menuler.IsImkanlari, "IsimkanlariIndex", "Admin")</li>
+                        <li>@Html.ActionLink("Uyeler", "UyelerIndex", "Admin")</li>
+                        <li>@Html.ActionLink("Çıkış", "Index", "Home")</li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+
+    </header>
+    <!--/header-->
+
+
+    <br />
+    <br />
+
+    @RenderBody()
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social">
+                        <ul class="social-share">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.top-bar-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; Gp Theme. All Rights Reserved.
+                    <div class="credits">
+                        <!--
+                          All the links in the footer should remain intact.
+                          You can delete the links only if you purchased the pro version.
+                          Licensing information: https://bootstrapmade.com/license/
+                          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Gp
+                        -->
+                        <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by
+                        <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--/#footer-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/costum")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,91 @@
+﻿@model WebApplication3.Models.Uyeler
+
+@{
+    ViewBag.Title = "UyelerDetails";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>UyelerDetails</h2>
+
+<div>
+    <h4>Uyeler</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GidilecekSehir)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GidilecekSehir)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GidilecekUniversite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GidilecekUniversite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bolum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bolum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsImkani)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsImkani)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sifre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sifre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SifreTekrarı)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SifreTekrarı)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UyeID }) |
+    @Html.ActionLink("Back to List", "UyelerIndex")
+</p>

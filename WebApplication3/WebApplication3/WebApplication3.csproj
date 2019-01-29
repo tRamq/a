@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2A81671-7F94-4CD3-B1B0-1BB0D7FA64F3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication3</RootNamespace>
+    <AssemblyName>WebApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.4.0.0\lib\net451\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.0.0\lib\net451\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.0.0\lib\net451\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.4.0.0\lib\net451\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.0.0\lib\net451\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.4.0.0\lib\net451\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.4.0.0\lib\net451\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.4.0.0\lib\net451\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.0.0\lib\net451\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.5.1\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.5.1\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.5.1\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.5.1\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.5.1\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.5.1\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IsImkanlariController.cs" />
+    <Compile Include="Controllers\KonaklamaController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UniversiteController.cs" />
+    <Compile Include="Controllers\UyeController.cs" />
+    <Compile Include="Controllers\UyelerController.cs" />
+    <Compile Include="Controllers\YetkiKisiController.cs" />
+    <Compile Include="DbC\erasmusBaslagicData.cs" />
+    <Compile Include="DbC\ErasmusContext.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812041815370_YetkiKisiEkleme.cs" />
+    <Compile Include="Migrations\201812041815370_YetkiKisiEkleme.Designer.cs">
+      <DependentUpon>201812041815370_YetkiKisiEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812212007003_UyeEkle.cs" />
+    <Compile Include="Migrations\201812212007003_UyeEkle.Designer.cs">
+      <DependentUpon>201812212007003_UyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812220728559_YeniUyelerEkle.cs" />
+    <Compile Include="Migrations\201812220728559_YeniUyelerEkle.Designer.cs">
+      <DependentUpon>201812220728559_YeniUyelerEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812251043245_AdminEkle.cs" />
+    <Compile Include="Migrations\201812251043245_AdminEkle.Designer.cs">
+      <DependentUpon>201812251043245_AdminEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IsImkanlari.cs" />
+    <Compile Include="Models\Konaklama.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Universite.cs" />
+    <Compile Include="Models\Uye.cs" />
+    <Compile Include="Models\Uyeler.cs" />
+    <Compile Include="Models\YetkiKisi.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Home.Designer.cs" />
+    <Compile Include="Resources\Home.en.Designer.cs" />
+    <Compile Include="Resources\JobModel.Designer.cs" />
+    <Compile Include="Resources\JobModel.en.Designer.cs" />
+    <Compile Include="Resources\Kaydol.Designer.cs" />
+    <Compile Include="Resources\Kaydol.en.Designer.cs" />
+    <Compile Include="Resources\KonakModel.Designer.cs" />
+    <Compile Include="Resources\KonakModel.en.Designer.cs" />
+    <Compile Include="Resources\Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Login.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LoginPartial.Designer.cs" />
+    <Compile Include="Resources\LoginPartial.en.Designer.cs" />
+    <Compile Include="Resources\LoginPartial.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginPartial.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LoginPartial1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginPartial.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Menuler.Designer.cs" />
+    <Compile Include="Resources\Menuler.en.Designer.cs" />
+    <Compile Include="Resources\OturumAc.Designer.cs" />
+    <Compile Include="Resources\Register.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Register.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Register.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Register.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UniModel.Designer.cs" />
+    <Compile Include="Resources\UniModel.en.Designer.cs" />
+    <Compile Include="Resources\Veritabaniİslemleri.Designer.cs" />
+    <Compile Include="Resources\Veritabaniİslemleri.en.Designer.cs" />
+    <Compile Include="Resources\Veritabaniİslemleri.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Veritabaniİslemleri.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Veritabaniİslemleri1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Veritabaniİslemleri.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\animate.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\contactform\contactform.js" />
+    <Content Include="Content\contactform\readme.txt" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\images\bayrak_1169x487.jpg" />
+    <Content Include="Content\images\blog\Buffalo Tavuk Kanatları.jpg" />
+    <Content Include="Content\images\blog\Doughnut1.jpg" />
+    <Content Include="Content\images\blog\hindi1.jpg" />
+    <Content Include="Content\images\blog\kaburga.jpg" />
+    <Content Include="Content\images\blog\Mac ve Cheese.jpg" />
+    <Content Include="Content\images\blog\meksye.jpg" />
+    <Content Include="Content\images\blog\Pancake1.jpg" />
+    <Content Include="Content\images\blog\salata.jpg" />
+    <Content Include="Content\images\los angeles_1169x487.jpg" />
+    <Content Include="Content\images\nasa_1169x487.jpg" />
+    <Content Include="Content\images\newyork1.jpg" />
+    <Content Include="Content\images\portfolio\full\Buffalo Tavuk Kanatları.jpg" />
+    <Content Include="Content\images\portfolio\full\chichago2.jpg" />
+    <Content Include="Content\images\portfolio\full\dolar.jpg" />
+    <Content Include="Content\images\portfolio\full\harita.jpg" />
+    <Content Include="Content\images\portfolio\full\los angeles1.jpg" />
+    <Content Include="Content\images\portfolio\full\losangeles2.jpg" />
+    <Content Include="Content\images\portfolio\full\Mac ve Cheese.jpg" />
+    <Content Include="Content\images\portfolio\full\mark.jpg" />
+    <Content Include="Content\images\portfolio\full\nasa.jpg" />
+    <Content Include="Content\images\portfolio\full\nasa_1169x487.jpg" />
+    <Content Include="Content\images\portfolio\full\newyork.jpg" />
+    <Content Include="Content\images\portfolio\full\newyork1.jpg" />
+    <Content Include="Content\images\portfolio\full\orlando.jpg" />
+    <Content Include="Content\images\portfolio\full\orlando2.jpg" />
+    <Content Include="Content\images\portfolio\full\ozgurheykeli.jpg" />
+    <Content Include="Content\images\portfolio\full\Pancake1.jpg" />
+    <Content Include="Content\images\portfolio\full\Philadelphia.jpg" />
+    <Content Include="Content\images\portfolio\full\Philadelphia1.jpg" />
+    <Content Include="Content\images\portfolio\full\steve-jobs.jpg" />
+    <Content Include="Content\images\portfolio\full\trump.jpg" />
+    <Content Include="Content\images\portfolio\full\washington.jpg" />
+    <Content Include="Content\images\portfolio\full\washington1.jpg" />
+    <Content Include="Content\images\portfolio\full\Webp.net-resizeimage.jpg" />
+    <Content Include="Content\images\portfolio\full\şelale.jpg" />
+    <Content Include="Content\images\portfolio\recent\Buffalo Tavuk Kanatları.jpg" />
+    <Content Include="Content\images\portfolio\recent\chichago2.jpg" />
+    <Content Include="Content\images\portfolio\recent\dolar.jpg" />
+    <Content Include="Content\images\portfolio\recent\los angeles1.jpg" />
+    <Content Include="Content\images\portfolio\recent\losangeles2.jpg" />
+    <Content Include="Content\images\portfolio\recent\Mac ve Cheese.jpg" />
+    <Content Include="Content\images\portfolio\recent\mark.jpg" />
+    <Content Include="Content\images\portfolio\recent\nasa.jpg" />
+    <Content Include="Content\images\portfolio\recent\nasa_1169x487.jpg" />
+    <Content Include="Content\images\portfolio\recent\newyork.jpg" />
+    <Content Include="Content\images\portfolio\recent\newyork1.jpg" />
+    <Content Include="Content\images\portfolio\recent\orlando.jpg" />
+    <Content Include="Content\images\portfolio\recent\orlando2.jpg" />
+    <Content Include="Content\images\portfolio\recent\ozgurlukheykeli.jpg" />
+    <Content Include="Content\images\portfolio\recent\Pancake1.jpg" />
+    <Content Include="Content\images\portfolio\recent\Philadelphia.jpg" />
+    <Content Include="Content\images\portfolio\recent\Philadelphia1.jpg" />
+    <Content Include="Content\images\portfolio\recent\steve-jobs.jpg" />
+    <Content Include="Content\images\portfolio\recent\trump.jpg" />
+    <Content Include="Content\images\portfolio\recent\washington.jpg" />
+    <Content Include="Content\images\portfolio\recent\washington1.jpg" />
+    <Content Include="Content\images\portfolio\recent\Webp.net-resizeimage.jpg" />
+    <Content Include="Content\images\portfolio\recent\şelale.jpg" />
+    <Content Include="Content\images\slider_one.jpg" />
+    <Content Include="Content\images\steve-jobs.jpg" />
+    <Content Include="Content\images\trump.jpg" />
+    <Content Include="Content\images\washington.jpg" />
+    <Content Include="Content\images\washington_1169x487.jpg" />
+    <Content Include="Content\images\WhatsApp Image 2018-12-14 at 23.24.14 %281%29.jpeg" />
+    <Content Include="Content\images\WhatsApp Image 2018-12-14 at 23.24.14 %282%29.jpeg" />
+    <Content Include="Content\images\WhatsApp Image 2018-12-14 at 23.24.14 %283%29.jpeg" />
+    <Content Include="Content\images\WhatsApp Image 2018-12-14 at 23.24.14 %284%29.jpeg" />
+    <Content Include="Content\images\WhatsApp Image 2018-12-14 at 23.24.15 %281%29.jpeg" />
+    <Content Include="Content\images\şelale.jpg" />
+    <Content Include="Content\prettyPhoto.css" />
+    <Content Include="Content\responsive.css" />
+    <Content Include="Content\stillerim.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jquery.isotope.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="Scripts\kontrol.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\wow.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Views\Universite\Create.cshtml" />
+    <Content Include="Views\Universite\Delete.cshtml" />
+    <Content Include="Views\Universite\Details.cshtml" />
+    <Content Include="Views\Universite\Edit.cshtml" />
+    <Content Include="Views\Universite\Index.cshtml" />
+    <Content Include="Views\IsImkanlari\Create.cshtml" />
+    <Content Include="Views\IsImkanlari\Delete.cshtml" />
+    <Content Include="Views\IsImkanlari\Details.cshtml" />
+    <Content Include="Views\IsImkanlari\Edit.cshtml" />
+    <Content Include="Views\IsImkanlari\Index.cshtml" />
+    <Content Include="Views\Konaklama\Create.cshtml" />
+    <Content Include="Views\Konaklama\Delete.cshtml" />
+    <Content Include="Views\Konaklama\Details.cshtml" />
+    <Content Include="Views\Konaklama\Edit.cshtml" />
+    <Content Include="Views\Konaklama\Index.cshtml" />
+    <Content Include="Views\Shared\Admin_Layout.cshtml" />
+    <Content Include="Views\Admin\IsimkanlariIndex.cshtml" />
+    <Content Include="Views\Admin\IsimkanlariCreate.cshtml" />
+    <Content Include="Views\Admin\IsimkanlariEdit.cshtml" />
+    <Content Include="Views\Admin\IsimkanlariDetails.cshtml" />
+    <Content Include="Views\Admin\IsimkanlariDelete.cshtml" />
+    <Content Include="Views\Admin\KonaklamaIndex.cshtml" />
+    <Content Include="Views\Admin\KonaklamaCreate.cshtml" />
+    <Content Include="Views\Admin\KonaklamaDelete.cshtml" />
+    <Content Include="Views\Admin\KonaklamaEdit.cshtml" />
+    <Content Include="Views\Admin\KonaklamaDetails.cshtml" />
+    <Content Include="Views\Admin\UniversiteIndex.cshtml" />
+    <Content Include="Views\Admin\UniversiteDelete.cshtml" />
+    <Content Include="Views\Admin\UniversiteDetails.cshtml" />
+    <Content Include="Views\Admin\UniversiteCreate.cshtml" />
+    <Content Include="Views\Admin\UniversiteEdit.cshtml" />
+    <Content Include="Views\Uye\Create.cshtml" />
+    <Content Include="Views\Uye\Delete.cshtml" />
+    <Content Include="Views\Uye\Details.cshtml" />
+    <Content Include="Views\Uye\Edit.cshtml" />
+    <Content Include="Views\Uye\Index.cshtml" />
+    <Content Include="Views\Uyeler\Create.cshtml" />
+    <Content Include="Views\Uyeler\Delete.cshtml" />
+    <Content Include="Views\Uyeler\Details.cshtml" />
+    <Content Include="Views\Uyeler\Edit.cshtml" />
+    <Content Include="Views\Uyeler\Index.cshtml" />
+    <Content Include="Views\Uyeler\UyeOlustur.cshtml" />
+    <Content Include="Views\Admin\UyelerIndex.cshtml" />
+    <Content Include="Views\Admin\UyelerCreate.cshtml" />
+    <Content Include="Views\Admin\UyelerDetails.cshtml" />
+    <Content Include="Views\Admin\UyelerEdit.cshtml" />
+    <Content Include="Views\Admin\UyelerDelete.cshtml" />
+    <Content Include="Views\YetkiKisi\Create.cshtml" />
+    <Content Include="Views\YetkiKisi\Delete.cshtml" />
+    <Content Include="Views\YetkiKisi\Details.cshtml" />
+    <Content Include="Views\YetkiKisi\Edit.cshtml" />
+    <Content Include="Views\YetkiKisi\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812041815370_YetkiKisiEkleme.resx">
+      <DependentUpon>201812041815370_YetkiKisiEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812212007003_UyeEkle.resx">
+      <DependentUpon>201812212007003_UyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812220728559_YeniUyelerEkle.resx">
+      <DependentUpon>201812220728559_YeniUyelerEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812251043245_AdminEkle.resx">
+      <DependentUpon>201812251043245_AdminEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Home.en.resx" />
+    <EmbeddedResource Include="Resources\Home.resx" />
+    <EmbeddedResource Include="Resources\JobModel.en.resx" />
+    <EmbeddedResource Include="Resources\JobModel.resx" />
+    <EmbeddedResource Include="Resources\Kaydol.en.resx" />
+    <EmbeddedResource Include="Resources\Kaydol.resx" />
+    <EmbeddedResource Include="Resources\KonakModel.en.resx" />
+    <EmbeddedResource Include="Resources\KonakModel.resx" />
+    <EmbeddedResource Include="Resources\Login.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Login.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Login.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Login.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LoginPartial.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoginPartial.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LoginPartial.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoginPartial1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Menuler.en.resx" />
+    <EmbeddedResource Include="Resources\Menuler.resx" />
+    <EmbeddedResource Include="Resources\OturumAc.en.resx" />
+    <EmbeddedResource Include="Resources\OturumAc.resx" />
+    <EmbeddedResource Include="Resources\Register.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Register.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Register.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Register.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UniModel.en.resx" />
+    <EmbeddedResource Include="Resources\UniModel.resx" />
+    <EmbeddedResource Include="Resources\Veritabaniİslemleri.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Veritabaniİslemleri.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Veritabaniİslemleri.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Veritabaniİslemleri1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56687</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56687/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

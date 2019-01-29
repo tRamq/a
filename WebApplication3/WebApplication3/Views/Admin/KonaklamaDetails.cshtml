@@ -1,0 +1,83 @@
+﻿@model WebApplication3.Models.Konaklama
+
+@{
+    ViewBag.Title = "KonaklamaDetails";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>KonaklamaDetails</h2>
+
+<div>
+    <h4>Konaklama</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sehirler)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sehirler)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fiyat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fiyat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YurtmuEvmi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YurtmuEvmi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YakinlikUzaklik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YakinlikUzaklik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KızmıErkek)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KızmıErkek)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KisiSayısı)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KisiSayısı)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kaçoda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kaçoda)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.KonaklamaID }) |
+    @Html.ActionLink("Back to List", "KonaklamaIndex")
+</p>
